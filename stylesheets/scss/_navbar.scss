@@ -1,5 +1,3 @@
-@use "variables" as v;
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,6 +24,7 @@
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  font-size: 1rem;
 }
 
 .list-item {
@@ -53,8 +52,6 @@
   padding: .8rem 1rem;
   border-radius: 25px;
   border: 1.5px solid rgb(v.$color-steelblue-100, .5);
-  text-decoration: none;
-  font-weight: bold;
   text-transform: uppercase;
   display: flex;
   cursor: pointer;

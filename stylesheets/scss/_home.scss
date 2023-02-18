@@ -1,0 +1,71 @@
+.hero-section {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: v.$color-aliceblue-100;
+}
+
+.hero-content {
+  width: 50%;
+  padding: 0 6rem 0 6rem;
+}
+
+.hero-content-text {
+  max-width: 500px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 300;
+  padding-bottom: 1.2rem;
+}
+
+.hero-content p {
+  padding-bottom: 1rem;
+}
+
+.hero-slider {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+.btn-hero-contact {
+  background-color: v.$color-steelblue-100;
+  color: #fff;
+  padding: .8rem 1rem;
+  border-radius: 25px;
+  border: 1.5px solid rgb(v.$color-steelblue-100, .5);
+  font-weight: bold;  text-transform: uppercase;
+  display: flex;
+  cursor: pointer;
+  flex-basis: 50%;
+  max-width: 280px;
+}
+
+.btn-hero-contact:hover {
+  color: #fff;
+  background-color: v.$color-darkblue-100;
+  transition: .3s;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
