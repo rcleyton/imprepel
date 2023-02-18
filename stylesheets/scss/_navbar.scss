@@ -1,0 +1,73 @@
+@use "variables" as v;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(v.$color-steelblue-100, .5);
+  padding: 2rem 6rem;
+  color: v.$color-gray-200;
+}
+
+.brand {
+  width: 30%;
+}
+
+.brand-logo {
+  width: 65%;
+}
+
+.navbar-options {
+  display: flex;
+}
+
+.list-menu {
+  @extend %list-none;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.list-item {
+  text-transform: uppercase;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: v.$color-steelblue-100; 
+  transition: .2s;
+}
+
+.list-item svg {
+  transition: fill 0.3s ease;
+}
+
+.list-item:hover svg path {
+  fill: #0056b3;
+}
+
+.btn-contact {
+  background-color: #fff;
+  color: v.$color-steelblue-100;
+  padding: .8rem 1rem;
+  border-radius: 25px;
+  border: 1.5px solid rgb(v.$color-steelblue-100, .5);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.btn-contact:hover {
+  background-color: v.$color-steelblue-100;
+  color: #fff;
+  transition: .3s;
+}
+
+
